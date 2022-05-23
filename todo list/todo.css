@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0px;
+    background: url("images/screen6.jpg");
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin-top: 5%;
+    font-family: 'Zapfino', sans-serif;
+    font-style: italic;
+    font-size: 60px;
+}
+
+button {
+    background: none;
+    color:white;
+    display: inline-block;
+    margin:20px;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #bbb;
+    color: #000000;
+} 
+
+a{
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.container{
+    margin: 50px auto;
+    max-width: 500px;
+}
+
+
+h2#title{
+    text-align: center;
+    margin-bottom: 50px;
+    color: whitesmoke;
+}
+
+div#header{
+    text-align: center;
+}
+
+div#header  div#input-container{
+    margin-bottom: 20px;
+    position: relative;
+    padding-top: 15px;
+}
+
+div#header div#input-container  input#todo- input{
+    border: o;
+    border-bottom: 2px solid white;
+    outline: 0;
+    font-size: 50px;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    letter-spacing: 1.25px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    border-radius: 0;
+    float: left;
+}
+
+label{
+    padding: 10px;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+#todoListItem{
+    justify-content: space-between;
+    padding: 10px;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.completed{
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    width: 500px;
+}
+
+label input{
+    margin-top: 45px;
+    text-transform: capitalize;
+    background: #eee;
+    height: 45px;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    font-size: 18px;
+    transition: 0.2s;
+    opacity: 0.9;
+    margin-top: 30px;
+}
+
+label p.checked{
+    text-decoration: line-through;
+}
+
+
+p#pText{
+    text-transform: capitalize;
+    background: #eee;
+    height: 45px;
+    width: 1400px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    font-size: 18px;
+    transition: 0.2s;
+    opacity: 0.9;
+    margin-top: 30px;
+    
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+  /* Set all odd list items to a different color (zebra-stripes) */
+p#pText:nth-child(odd) {
+    background: #f9f9f9e9;
+  }
+  
+  /* Darker background-color on hover */
+ p#pText:hover {
+    background: #ddd;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  p#pText.strike {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  p#pText.strike::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.todo{
+    display: flex;
+    margin: 5px;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid rgb(69, 5, 187)
+}
+
+/* Style the close button */
+button#close {
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    width: 50px;
+    text-align: center;
+    justify-content: center;
+}
+  
+button#close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+
+
